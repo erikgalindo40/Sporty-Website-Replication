@@ -21,26 +21,26 @@ specificCatalogs.addEventListener('mouseout', () => {
 })
 
 firstSpecificCatalog.addEventListener('click', () => {
-    document.body.classList.toggle('.show-catalog-one')
+    document.body.classList.toggle('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
     document.body.classList.remove('show-catalog-three')
     document.body.classList.remove('show-catalog-four')
 })
 secondSpecificCatalog.addEventListener('click', () => {
-    document.body.classList.remove('.show-catalog-one')
+    document.body.classList.remove('show-catalog-one')
     document.body.classList.toggle('show-catalog-two')
     document.body.classList.remove('show-catalog-three')
     document.body.classList.remove('show-catalog-four')
 })
 thirdSpecificCatalog.addEventListener('click', () => {
-    document.body.classList.remove('.show-catalog-one')
+    document.body.classList.remove('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
     document.body.classList.toggle('show-catalog-three')
     document.body.classList.remove('show-catalog-four')
 
 })
 fourthSpecificCatalog.addEventListener('click', () => {
-    document.body.classList.remove('.show-catalog-one')
+    document.body.classList.remove('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
     document.body.classList.remove('show-catalog-three')
     document.body.classList.toggle('show-catalog-four')

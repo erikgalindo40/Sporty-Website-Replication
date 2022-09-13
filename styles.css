@@ -1123,13 +1123,19 @@ header {
     margin-bottom: 1em;
 }
 
+.specific-catalog-header {
+    margin-top: .8em;
+    padding: 0;
+    margin-bottom: 0;
+}
+
 .specific-catalog li {
     color: var(--color-secondary-dark);
     display: none;
     transition: display 250ms ease-in-out;
 }
 
-.show-catalog-one.specific-catalog:nth-child(1) li {
+.show-catalog-one .specific-catalog:nth-child(1) li {
     display: block;
 }
 .show-catalog-two .specific-catalog:nth-child(2) li {
@@ -1148,8 +1154,6 @@ header {
     color: var(--color-dark);
     cursor: default;
 
-    margin-bottom: .1em;
-    padding-top: .3em;
     border-bottom: 2px solid var(--color-light);
 }
 
@@ -1157,8 +1161,12 @@ header {
     border-bottom: 2px solid var(--color-dark);
 }
 
-.specific-catalog a {
-    padding-inline: .1em;
+.specific-catalog li {
+    margin-top: .7em;
+}
+
+.specific-catalog li a {
+    padding-inline: .5em;
     color: var(--color-secondary-dark);
     border-bottom: 2px solid var(--color-light);
     transition: 250ms ease-in-out;
@@ -1167,9 +1175,6 @@ header {
 .specific-catalog a:hover,
 .specific-catalog a:focus {
     color: var(--color-dark);
-}
-
-.specific-catalog a:hover {
     border-bottom: 2px solid var(--color-dark);
 }
 
