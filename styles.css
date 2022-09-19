@@ -621,7 +621,16 @@ transform: translateY(30%);
 }
 
 .discounts-banner > * {
-    scroll-snap-align: start;
+    animation: test 6.5s 2s ease-in-out forwards infinite alternate;
+}
+
+@keyframes test {
+    0%, 50% {
+        transform: translate(0,0);
+    }
+    60%, 100% {
+        transform: translateX(-100%);
+    }
 }
 
 .discounts-banner::-webkit-scrollbar {
