@@ -278,6 +278,10 @@ header {
     justify-self: flex-end;
 }
 
+.mobile-nav-menu svg:hover {
+    cursor: pointer;
+}
+
 /* Mobile Header Menu */
 
 .mobile-header-menu {
