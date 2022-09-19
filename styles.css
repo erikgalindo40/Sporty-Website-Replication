@@ -221,6 +221,24 @@ header {
 .shop-icons input {
     display: none;
 }
+/* Skip Navigation Button */
+.skip-nav-button {
+    position: absolute;
+    padding: .2em;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+
+    left: .9em;
+
+    transform: translateY(-500%);
+}
+
+.skip-nav-button:focus {
+transform: translateY(30%);
+}
+
+
 /* Mobile Menu Toggle*/
 
 #mobile-nav-toggle-off {
