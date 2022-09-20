@@ -11,8 +11,6 @@ const secondSpecificCatalog = document.querySelector('[data-secondSpecificCatalo
 const thirdSpecificCatalog = document.querySelector('[data-thirdSpecificCatalog]')
 const fourthSpecificCatalog = document.querySelector('[data-fourthSpecificCatalog]')
 
-const grabImages = document.querySelectorAll('img')
-
 //Specific Catalog Hover function
 specificCatalogs.addEventListener('mouseover', () => {
     document.body.classList.add('show-specific-catalogs')
@@ -93,6 +91,3 @@ footerGuideTab.addEventListener('keypress', (e) => {
 footnoteGuideContainer.addEventListener('mouseleave', () => {
     footerGuideTab.classList.remove('guide-tab-open')
 })
-
-//Function to set Lazy Loading Attribute on all images
-// grabImages.setAttribute('loading', 'lazy')
