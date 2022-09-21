@@ -19,7 +19,15 @@ specificCatalogs.addEventListener('mouseout', () => {
     document.body.classList.remove('show-specific-catalogs')
 })
 
-firstSpecificCatalog.addEventListener('click', () => {
+firstSpecificCatalog.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+        document.body.classList.toggle('show-catalog-one')
+        document.body.classList.remove('show-catalog-two')
+        document.body.classList.remove('show-catalog-three')
+        document.body.classList.remove('show-catalog-four')
+    }
+})
+firstSpecificCatalog.addEventListener('enter', () => {
     document.body.classList.toggle('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
     document.body.classList.remove('show-catalog-three')
@@ -31,6 +39,14 @@ secondSpecificCatalog.addEventListener('click', () => {
     document.body.classList.remove('show-catalog-three')
     document.body.classList.remove('show-catalog-four')
 })
+secondSpecificCatalog.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+        document.body.classList.remove('show-catalog-one')
+        document.body.classList.toggle('show-catalog-two')
+        document.body.classList.remove('show-catalog-three')
+        document.body.classList.remove('show-catalog-four')
+    }
+})
 thirdSpecificCatalog.addEventListener('click', () => {
     document.body.classList.remove('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
@@ -38,11 +54,27 @@ thirdSpecificCatalog.addEventListener('click', () => {
     document.body.classList.remove('show-catalog-four')
 
 })
+thirdSpecificCatalog.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+        document.body.classList.remove('show-catalog-one')
+        document.body.classList.remove('show-catalog-two')
+        document.body.classList.toggle('show-catalog-three')
+        document.body.classList.remove('show-catalog-four')
+    }
+})
 fourthSpecificCatalog.addEventListener('click', () => {
     document.body.classList.remove('show-catalog-one')
     document.body.classList.remove('show-catalog-two')
     document.body.classList.remove('show-catalog-three')
     document.body.classList.toggle('show-catalog-four')
+})
+fourthSpecificCatalog.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+        document.body.classList.remove('show-catalog-one')
+        document.body.classList.remove('show-catalog-two')
+        document.body.classList.remove('show-catalog-three')
+        document.body.classList.toggle('show-catalog-four')
+    }
 })
 
 
