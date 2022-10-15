@@ -19,19 +19,19 @@ specificCatalogs.addEventListener('mouseout', () => {
     document.body.classList.remove('show-specific-catalogs')
 })
 
+firstSpecificCatalog.addEventListener('click', () => {
+    document.body.classList.toggle('show-catalog-one')
+    document.body.classList.remove('show-catalog-two')
+    document.body.classList.remove('show-catalog-three')
+    document.body.classList.remove('show-catalog-four')
+})
 firstSpecificCatalog.addEventListener('keypress', (e) => {
-    if (e.key == 'Enter') {
+    if (e.key=='Enter') {
         document.body.classList.toggle('show-catalog-one')
         document.body.classList.remove('show-catalog-two')
         document.body.classList.remove('show-catalog-three')
         document.body.classList.remove('show-catalog-four')
     }
-})
-firstSpecificCatalog.addEventListener('enter', () => {
-    document.body.classList.toggle('show-catalog-one')
-    document.body.classList.remove('show-catalog-two')
-    document.body.classList.remove('show-catalog-three')
-    document.body.classList.remove('show-catalog-four')
 })
 secondSpecificCatalog.addEventListener('click', () => {
     document.body.classList.remove('show-catalog-one')
@@ -106,7 +106,6 @@ mobileNavToggleOff.addEventListener('keypress', (e)=>{
 helpLink.addEventListener('keydown',(e)=> {
     if(e.keyCode == 9) {
         e.preventDefault()
-        console.log(`help`)
         mobileNavToggleOff.focus()
     }
 })
